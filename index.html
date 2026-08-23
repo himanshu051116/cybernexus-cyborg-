@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#05070c" />
+  <meta name="description" content="CYBERNEXUS — a responsive cyborg-themed landing page exploring the convergence of human intuition and machine intelligence." />
+  <title>CYBERNEXUS — Human × Machine</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="CYBERNEXUS home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
+      <span>CYBER<span>NEXUS</span></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#origin">Origin</a>
+      <a href="#systems">Systems</a>
+      <a href="#protocol">Protocol</a>
+    </nav>
+
+    <a class="nav-cta" href="#connect">Initialize <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <a href="#origin">Origin</a>
+    <a href="#systems">Systems</a>
+    <a href="#protocol">Protocol</a>
+    <a href="#connect">Initialize ↗</a>
+  </div>
+
+  <main>
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse-dot"></span> SYSTEM ONLINE // 30.08.26</div>
+        <h1>
+          BEYOND<br />
+          <span class="outline-text">HUMAN</span>
+          <span class="hero-accent">//</span>
+        </h1>
+        <p class="hero-lede">
+          A new interface for the age of augmentation—where organic instinct meets engineered precision.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#systems">Explore systems <span>→</span></a>
+          <a class="text-link" href="#origin"><span class="mini-grid" aria-hidden="true"></span> Discover the origin</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" data-delay="100" aria-label="Abstract cyborg head visualization">
+        <div class="radar-ring ring-one"></div>
+        <div class="radar-ring ring-two"></div>
+        <div class="radar-ring ring-three"></div>
+        <div class="hero-code code-a">NX-09<br />BIO.SYNC</div>
+        <div class="hero-code code-b">96.7%<br />LINK STABLE</div>
+        <div class="hero-code code-c">CORE<br />ACTIVE</div>
+        <svg class="cyborg-svg" viewBox="0 0 620 720" role="img" aria-labelledby="cyborgTitle cyborgDesc">
+          <title id="cyborgTitle">Futuristic cyborg portrait</title>
+          <desc id="cyborgDesc">A stylized metallic head with glowing circuitry and mechanical components.</desc>
+          <defs>
+            <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#eef2f6"/>
+              <stop offset="0.22" stop-color="#7f8a94"/>
+              <stop offset="0.48" stop-color="#1c222c"/>
+              <stop offset="0.7" stop-color="#b9c3cb"/>
+              <stop offset="1" stop-color="#343d48"/>
+            </linearGradient>
+            <linearGradient id="darkMetal" x1="0" y1="0" x2="1" y2="0.3">
+              <stop offset="0" stop-color="#0a0d12"/>
+              <stop offset="0.5" stop-color="#353e49"/>
+              <stop offset="1" stop-color="#0c1016"/>
+            </linearGradient>
+            <linearGradient id="skinMetal" x1="0" y1="0" x2="0.9" y2="1">
+              <stop offset="0" stop-color="#d9dde0"/>
+              <stop offset="0.45" stop-color="#636e78"/>
+              <stop offset="1" stop-color="#171d25"/>
+            </linearGradient>
+            <radialGradient id="eyeGlow">
+              <stop offset="0" stop-color="#ffffff"/>
+              <stop offset="0.2" stop-color="#bdfcff"/>
+              <stop offset="0.55" stop-color="#43f5ff"/>
+              <stop offset="1" stop-color="#43f5ff" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+              <feGaussianBlur stdDeviation="8" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+            <clipPath id="headClip">
+              <path d="M309 63 C405 63 478 135 499 224 C521 315 482 428 432 491 C403 527 393 580 386 641 L235 641 C229 580 218 530 191 493 C143 430 110 330 128 240 C148 139 220 63 309 63Z"/>
+            </clipPath>
+          </defs>
+
+          <g opacity="0.22" stroke="#79f8ff" stroke-width="1">
+            <path d="M40 184H145"/><path d="M476 126H586"/><path d="M474 514H605"/><path d="M30 558H170"/>
+            <circle cx="48" cy="184" r="4" fill="#79f8ff"/><circle cx="578" cy="126" r="4" fill="#79f8ff"/>
+          </g>
+
+          <path d="M309 63 C405 63 478 135 499 224 C521 315 482 428 432 491 C403 527 393 580 386 641 L235 641 C229 580 218 530 191 493 C143 430 110 330 128 240 C148 139 220 63 309 63Z" fill="url(#darkMetal)" stroke="#66717c" stroke-width="2"/>
+
+          <g clip-path="url(#headClip)">
+            <path d="M123 176 C187 91 272 83 309 91 L310 661 L136 661Z" fill="url(#skinMetal)"/>
+            <path d="M311 82 C390 83 482 164 500 247 L489 389 L444 490 L400 544 L386 654 H311Z" fill="url(#metal)"/>
+            <path d="M302 82 L339 66 L430 110 L405 154 L348 172 L311 148Z" fill="#242d38" stroke="#96a3ae"/>
+            <path d="M392 114 L463 173 L491 248 L437 237 L407 184Z" fill="#0b1016" stroke="#606b74"/>
+            <path d="M314 153 L401 154 L430 210 L403 251 L315 234Z" fill="#64707a" opacity="0.82"/>
+            <path d="M313 238 L433 236 L464 287 L433 314 L313 294Z" fill="#10161e" stroke="#87939b"/>
+            <path d="M314 301 L435 316 L463 386 L418 401 L314 366Z" fill="#505b65"/>
+            <path d="M315 370 L417 405 L447 462 L395 494 L315 464Z" fill="#111720" stroke="#687580"/>
+            <path d="M315 468 L394 496 L383 551 L315 540Z" fill="#59636e"/>
+            <path d="M314 547 L386 554 L379 641 L314 644Z" fill="#0b1016" stroke="#68737d"/>
+
+            <path d="M135 250 L210 213 L272 223 L301 249 L277 295 L207 307 L147 291Z" fill="#262f39"/>
+            <path d="M150 328 L201 309 L268 322 L298 355 L279 399 L206 403 L158 382Z" fill="#76818a" opacity="0.34"/>
+            <path d="M170 412 L224 405 L294 432 L293 497 L244 522 L191 484Z" fill="#171e27"/>
+            <path d="M209 515 L292 500 L294 582 L252 600 L220 570Z" fill="#596570" opacity="0.55"/>
+
+            <g fill="none" stroke="#58f3ff" stroke-width="3" filter="url(#glow)" opacity="0.8">
+              <path d="M348 118 L366 145 L356 188 L396 215"/>
+              <path d="M455 268 L404 279 L382 328 L429 353"/>
+              <path d="M418 414 L375 432 L362 482 L389 516"/>
+              <path d="M174 356 L211 353 L231 376"/>
+            </g>
+            <g fill="#62f7ff">
+              <circle cx="348" cy="118" r="4"/><circle cx="396" cy="215" r="4"/><circle cx="455" cy="268" r="4"/>
+              <circle cx="429" cy="353" r="4"/><circle cx="418" cy="414" r="4"/><circle cx="389" cy="516" r="4"/>
+            </g>
+          </g>
+
+          <path d="M142 281 Q206 236 286 266" fill="none" stroke="#8b969e" stroke-width="13" stroke-linecap="round" opacity="0.7"/>
+          <path d="M147 283 Q212 251 286 274" fill="none" stroke="#0a0d10" stroke-width="8" stroke-linecap="round"/>
+          <ellipse cx="237" cy="282" rx="33" ry="15" fill="#142126" stroke="#71f6ff" stroke-width="2"/>
+          <ellipse cx="237" cy="282" rx="23" ry="23" fill="url(#eyeGlow)" filter="url(#glow)"/>
+          <circle cx="237" cy="282" r="7" fill="#e7ffff"/>
+
+          <path d="M180 319 Q148 339 155 376 Q164 401 189 405" fill="none" stroke="#8e989f" stroke-width="5"/>
+          <path d="M300 334 L277 409 L298 432" fill="none" stroke="#aab2b8" stroke-width="5"/>
+          <path d="M224 477 Q267 492 322 475" fill="none" stroke="#88939b" stroke-width="4"/>
+          <path d="M245 511 Q287 523 330 509" fill="none" stroke="#222a32" stroke-width="7"/>
+
+          <g opacity="0.9">
+            <rect x="425" y="252" width="62" height="22" rx="5" fill="#111820" stroke="#7bf7ff"/>
+            <rect x="431" y="258" width="7" height="10" fill="#7bf7ff"/>
+            <rect x="442" y="258" width="18" height="10" fill="#7bf7ff" opacity="0.5"/>
+            <rect x="464" y="258" width="15" height="10" fill="#7bf7ff" opacity="0.2"/>
+          </g>
+        </svg>
+        <div class="visual-label"><span>01</span> SYNTHETIC<br />NEURAL INTERFACE</div>
+      </div>
+
+      <div class="hero-index" aria-hidden="true">01</div>
+      <div class="hero-side-label" aria-hidden="true">HUMAN // MACHINE // CONVERGENCE</div>
+    </section>
+
+    <section class="ticker" aria-label="System capabilities">
+      <div class="ticker-track">
+        <span>NEURAL LINK</span><b>✦</b><span>ADAPTIVE ARMOR</span><b>✦</b><span>OPTICAL AUGMENTATION</span><b>✦</b><span>BIOMETRIC CORE</span><b>✦</b><span>NEURAL LINK</span><b>✦</b><span>ADAPTIVE ARMOR</span><b>✦</b>
+      </div>
+    </section>
+
+    <section class="origin section-shell" id="origin">
+      <div class="section-number reveal">02</div>
+      <div class="section-heading reveal">
+        <p class="eyebrow">// ORIGIN</p>
+        <h2>THE BODY WAS<br /><span>ONLY VERSION 1.0</span></h2>
+      </div>
+      <div class="origin-copy reveal">
+        <p class="lead">Evolution gave us instinct. Engineering gives us choice.</p>
+        <p>CYBERNEXUS imagines a near future where augmentation is not about replacing humanity, but amplifying what makes us human: perception, resilience, creativity and connection.</p>
+      </div>
+
+      <div class="metrics reveal">
+        <article><span data-counter="24">0</span><small>ms</small><p>Neural response</p></article>
+        <article><span data-counter="96">0</span><small>%</small><p>Bio-sync integrity</p></article>
+        <article><span data-counter="18">0</span><small>x</small><p>Optical precision</p></article>
+        <article><span data-counter="7">0</span><small>/7</small><p>Adaptive uptime</p></article>
+      </div>
+    </section>
+
+    <section class="systems section-shell" id="systems">
+      <div class="section-number reveal">03</div>
+      <div class="section-heading reveal">
+        <p class="eyebrow">// SYSTEMS</p>
+        <h2>BUILT TO<br /><span>TRANSCEND LIMITS</span></h2>
+      </div>
+
+      <div class="system-grid">
+        <article class="system-card reveal" data-tilt>
+          <div class="card-top"><span>NX.01</span><span>↗</span></div>
+          <div class="card-icon eye-icon" aria-hidden="true"><i></i></div>
+          <h3>Optical Array</h3>
+          <p>Multi-spectrum perception engineered to reveal what organic vision cannot.</p>
+          <div class="card-meter"><i style="--level:88%"></i></div>
+          <small>CALIBRATION 88%</small>
+        </article>
+
+        <article class="system-card featured reveal" data-delay="80" data-tilt>
+          <div class="card-top"><span>NX.02</span><span>↗</span></div>
+          <div class="card-icon neural-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <h3>Neural Mesh</h3>
+          <p>Low-latency cognition layer that translates intent into machine action.</p>
+          <div class="card-meter"><i style="--level:96%"></i></div>
+          <small>LINK INTEGRITY 96%</small>
+        </article>
+
+        <article class="system-card reveal" data-delay="160" data-tilt>
+          <div class="card-top"><span>NX.03</span><span>↗</span></div>
+          <div class="card-icon hex-icon" aria-hidden="true"><i></i></div>
+          <h3>Adaptive Shell</h3>
+          <p>Responsive exo-architecture designed to absorb, learn and reconfigure.</p>
+          <div class="card-meter"><i style="--level:74%"></i></div>
+          <small>ADAPTATION 74%</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="protocol section-shell" id="protocol">
+      <div class="protocol-panel reveal">
+        <div class="protocol-copy">
+          <p class="eyebrow">// PROTOCOL 04</p>
+          <h2>ONE SIGNAL.<br /><span>ZERO FRICTION.</span></h2>
+          <p>Every augmented system is synchronized through a shared neural protocol—fast enough to feel less like technology and more like instinct.</p>
+          <a href="#connect" class="button button-ghost">Run protocol <span>→</span></a>
+        </div>
+        <div class="hud" aria-label="Neural synchronization status">
+          <div class="hud-corners"></div>
+          <div class="hud-core">
+            <div class="core-orbit orbit-1"></div>
+            <div class="core-orbit orbit-2"></div>
+            <div class="core-center"><b>SYNC</b><span>96.7%</span></div>
+          </div>
+          <div class="hud-readouts">
+            <span>LATENCY <b>24ms</b></span>
+            <span>UPLINK <b>ACTIVE</b></span>
+            <span>CORE TEMP <b>36.8°</b></span>
+            <span>STATUS <b>NOMINAL</b></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="connect section-shell" id="connect">
+      <div class="connect-inner reveal">
+        <p class="eyebrow"><span class="pulse-dot"></span> ACCESS CHANNEL OPEN</p>
+        <h2>READY TO<br /><span>UPGRADE REALITY?</span></h2>
+        <p>Enter the next interface between human potential and machine precision.</p>
+        <button class="button button-primary" id="initializeBtn">Initialize connection <span>→</span></button>
+        <div class="terminal-message" id="terminalMessage" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-shell">
+    <a class="brand" href="#top"><span class="brand-mark"><i></i><i></i></span><span>CYBER<span>NEXUS</span></span></a>
+    <p>Concept interface // 2026</p>
+    <p>Designed for the next version of human.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
